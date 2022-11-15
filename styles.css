@@ -4,40 +4,71 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    letter-spacing: .3mm;
 }
+
+
 a {
     text-decoration: none;
     cursor: pointer;
 }
 
-h1 {
-    font-weight: bold;
-}
 
 li {
     list-style-type: none;
 }
 
-#navigation {
+h1 {
+    letter-spacing: .3mm;
+    color: rgba(0, 0, 0, 0.911);
+}
+
+.purple {
+    color: #6415ff;
+}
+
+p {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.692);
+}
+
+.container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
+.site__row {
+    padding: 32px 0px;
+    height: 100vh;
+}
+
+/* 
+
+NAV
+
+*/
+
+#navigation {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
 .nav__bar {
     display: flex;
     justify-content: space-between;
-    padding: 32px 0;
     width: 100%;
     max-width: 1200px;
+    background-color: white;
 }
 
 .nav__container {
     width: 100%;
     max-width: 150px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -52,6 +83,7 @@ li {
     padding-right: 8px;
     transition: color 300ms ease;
     cursor: pointer;
+    font-weight: bold;
 }
 
 .logo__name:hover {
@@ -60,6 +92,7 @@ li {
 
 .nav__list {
     display: flex;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -90,4 +123,93 @@ transition: all 300ms ease;
 
 .nav__link--primary:hover {
     opacity: .9;
+}
+
+/* 
+
+HEADER 
+
+*/
+
+
+.header__row {
+padding: 120px 0px;
+display: flex;
+margin: 0 auto;
+}
+
+.header__title {
+ font-size: 48px;
+ margin-bottom: 32px;
+}
+
+.header__para--faint {
+    margin-top: 80px;
+}
+
+.header__para {
+    margin-bottom: 48px;
+}
+
+
+.header__email--wrapper {
+    border: solid rgba(211, 211, 211, 0.507);
+    border-radius: 30px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+input,
+button {
+    border: none;
+    background-color: white;
+    border-radius: 30px;
+}
+
+
+.header__email {
+    font-size: 15px;
+    padding: 0 40px;
+    color: lightgray;
+}
+
+.header__btn {
+    font-size: 15px;
+    color: white;
+    background-color: #6415ff;
+    border-radius: 30px;
+    padding: 15px;
+}
+
+.header__para--faint,
+.header__img {
+    opacity: .4;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.header__para--faint {
+    margin-bottom: 25px;
+}
+
+.header__img {
+    width: 100%;
+max-width: 400px;
+}
+
+.header__column {
+    width: 40%;
+    padding-right: 40px;
+}
+
+.header__column--img {
+    width: 60%;
+}
+
+.header__column-img {
+    width: 100%;
 }
