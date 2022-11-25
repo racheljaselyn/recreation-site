@@ -17,9 +17,11 @@ li {
     list-style-type: none;
 }
 
-h1 {
+h1,
+h2 {
     letter-spacing: .3mm;
     color: rgba(0, 0, 0, 0.911);
+    font-size: 48px;
 }
 
 .purple {
@@ -38,6 +40,12 @@ p {
 }
 
 .site__row {
+    padding: 120px 0px;
+    display: flex;
+    margin: 0 auto;
+    }
+
+.nav__row {
     padding: 32px 0px;
     height: 100vh;
 }
@@ -132,14 +140,13 @@ HEADER
 */
 
 
-.header__row {
+.row {
 padding: 120px 0px;
 display: flex;
 margin: 0 auto;
 }
 
 .header__title {
- font-size: 48px;
  margin-bottom: 32px;
 }
 
@@ -212,4 +219,21 @@ max-width: 400px;
 
 .header__column-img {
     width: 100%;
+}
+
+/* FEATURES */
+
+.features__row {
+    text-align: center;
+}
+
+.features__title {
+    font-size: 16px;
+    color: #6415ff;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.features__para {
+    
 }
